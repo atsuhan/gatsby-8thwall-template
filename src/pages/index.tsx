@@ -4,11 +4,20 @@ import { baseStyle } from 'src/styles';
 
 import styled from '@emotion/styled';
 
+import Footer from '../layouts/Footer';
+import Header from '../layouts/Header';
+
 const Component: React.FCX = ({ className }) => (
-  <main className={className}>
-    <h1>this is Component page!</h1>
-    <AnyImage filename='Lena.jpg' />
-  </main>
+  <React.Fragment>
+    <Header />
+
+    <main className={className}>
+      <h1>this is Component page!</h1>
+      <AnyImage filename='Lena.jpg' />
+    </main>
+
+    <Footer />
+  </React.Fragment>
 );
 
 const StyledComponent = styled(Component)`
