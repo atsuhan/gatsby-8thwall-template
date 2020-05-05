@@ -10,7 +10,7 @@ const siteMetadata = {
   siteDescription,
   siteLanguage: `en`,
   author: `@a_hancho`, // twitter account id
-  basePath: `/`,
+  basePath: `/webar`,
   social: {
     twitter: `https://twitter.com/a_hancho`,
     github: `https://github.com/atsuhan`,
