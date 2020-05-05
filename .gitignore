@@ -76,4 +76,4 @@ cypress/screenshots
 junit.xml
 
 ## EighthWallKey
-./src/data/keys.json
+src/data/keys.json
