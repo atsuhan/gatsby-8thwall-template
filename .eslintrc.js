@@ -19,7 +19,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [1, { argsIgnorePattern: 'res|next|stage|^err|on|config|e|_' }],
     'arrow-body-style': [2, 'as-needed'],
     'no-param-reassign': [2, { props: false }],
-    'no-unused-expressions': [1, { allowTaggedTemplates: true }],
+    'no-unused-expressions': 'off',
     quotes: 'off',
     '@typescript-eslint/quotes': [2, 'backtick', { avoidEscape: true }],
     '@typescript-eslint/prefer-interface': 0,
@@ -47,7 +47,9 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'react/no-danger': 0,
     'react/display-name': 0,
+    'react/destructuring-assignment': 0,
     'react/react-in-jsx-scope': 0,
+    'react/static-property-placement': 0,
     'react/jsx-uses-react': 1,
     'react/forbid-prop-types': 0,
     'react/no-unescaped-entities': 0,
@@ -63,6 +65,7 @@ module.exports = {
     'jsx-a11y/href-no-hash': 'off',
     'jsx-a11y/anchor-is-valid': ['warn', { aspects: ['invalidHref'] }],
     'no-shadow': 0,
+    'lines-between-class-members': ['error', 'always', { exceptAfterSingleLine: true }],
   },
   settings: {
     react: {

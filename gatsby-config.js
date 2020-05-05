@@ -20,6 +20,7 @@ const siteMetadata = {
 module.exports = {
   siteMetadata,
   plugins: [
+    // style
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sass`,
     {
@@ -29,6 +30,18 @@ module.exports = {
         path: `static`,
       },
     },
+
+    // json
+    `gatsby-transformer-json`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `src/data/`,
+      },
+    },
+
+    // mdx
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -46,6 +59,8 @@ module.exports = {
         ],
       },
     },
+
+    // SAO
     {
       resolve: `@hpprc/gatsby-theme-core`,
       options: {
