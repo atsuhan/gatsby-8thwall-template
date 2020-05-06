@@ -3,10 +3,6 @@
  */
 import React from 'react';
 
-declare let window: any;
-declare let XR8: any;
-declare let XRExtras: any;
-
 const CANVAS_ID = `camerafeed`;
 
 const runAR = (prop: EighthWallProp) => {
