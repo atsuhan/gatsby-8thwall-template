@@ -57,7 +57,7 @@ module.exports = {
         siteTitle,
         siteUrl,
         siteDescription,
-        iconPath: `./static/icon.jpg`,
+        iconPath: `./static/img/icon.jpg`,
         googleAnalyticsTrackingId: ``,
       },
     },
