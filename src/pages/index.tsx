@@ -6,7 +6,7 @@ import keys from 'src/data/keys.json';
 // webar
 import 'src/styles/static-global-webar.scss';
 import ScriptTag from 'src/components/ScriptTag';
-import EighthWallHandler from 'src/components/EighthWall/EighthWallHandler';
+import EighthWallHandler from 'src/components/eighthwall/EighthWallHandler';
 
 const customPipelineModule = () => ({
   name: `test`,
