@@ -35,7 +35,7 @@ type EighthWallProp = {
   isWebGl2: boolean;
 };
 
-export default class EighthWallHandler extends React.Component<EighthWallProp> {
+export default class EighthWallApp extends React.Component<EighthWallProp> {
   static defaultProps: EighthWallProp = {
     customPipelineModule: () => ({ name: `sample` }),
     isWebGl2: false,
