@@ -75,5 +75,6 @@ module.exports = {
   globals: {
     XRExtras: true,
     XR8: true,
+    THREE: true,
   },
 };

@@ -7,17 +7,14 @@ import keys from 'src/data/keys.json';
 import 'src/styles/static-global-webar.scss';
 import ScriptTag from 'src/components/ScriptTag';
 import EighthWallApp from 'src/components/eighthwall/EighthWallApp';
-
-const customPipelineModule = () => ({
-  name: `test`,
-});
+import simpleBoxScenePipelineModule from 'src/lib/eighthwall/simpleBoxScenePipelineModule';
 
 const Component: React.FCX = () => (
   <div className='eighthwall-container'>
     <ScriptTag name='threejs' src='https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js' />
     <ScriptTag name='xrextras' src='//cdn.8thwall.com/web/xrextras/xrextras.js' />
     <ScriptTag name='xrweb' isAsync src={`//apps.8thwall.com/xrweb?appKey=${keys.EIGHTHWALL}`} />
-    <EighthWallApp customPipelineModule={customPipelineModule} />
+    <EighthWallApp customPipelineModule={simpleBoxScenePipelineModule} />
   </div>
 );
 
