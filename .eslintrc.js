@@ -7,7 +7,6 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier/@typescript-eslint',
   ],
-  parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint', 'react', 'prettier', 'react-hooks'],
   parserOptions: {
     ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
@@ -16,6 +15,8 @@ module.exports = {
   },
   env: { browser: true, node: true, es6: true },
   rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     '@typescript-eslint/no-unused-vars': [1, { argsIgnorePattern: 'res|next|stage|^err|on|config|e|_' }],
     'arrow-body-style': [2, 'as-needed'],
     'no-param-reassign': [2, { props: false }],
@@ -30,7 +31,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/ban-ts-ignore': 0,
-    'no-console': 0,
     'spaced-comment': 0,
     'no-use-before-define': 0,
     'linebreak-style': 0,
@@ -71,5 +71,10 @@ module.exports = {
     react: {
       version: 'detect',
     },
+  },
+  globals: {
+    XRExtras: true,
+    XR8: true,
+    THREE: true,
   },
 };

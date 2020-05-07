@@ -3,10 +3,6 @@
  */
 import React from 'react';
 
-declare let window: any;
-declare let XR8: any;
-declare let XRExtras: any;
-
 const CANVAS_ID = `camerafeed`;
 
 const runAR = (prop: EighthWallProp) => {
@@ -39,7 +35,7 @@ type EighthWallProp = {
   isWebGl2: boolean;
 };
 
-export default class EighthWallHandler extends React.Component<EighthWallProp> {
+export default class EighthWallApp extends React.Component<EighthWallProp> {
   static defaultProps: EighthWallProp = {
     customPipelineModule: () => ({ name: `sample` }),
     isWebGl2: false,

@@ -31,16 +31,6 @@ module.exports = {
       },
     },
 
-    // json
-    `gatsby-transformer-json`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `json`,
-        path: `src/data/`,
-      },
-    },
-
     // mdx
     {
       resolve: `gatsby-plugin-mdx`,
@@ -67,7 +57,7 @@ module.exports = {
         siteTitle,
         siteUrl,
         siteDescription,
-        iconPath: `./static/icon.jpg`,
+        iconPath: `./static/img/icon.jpg`,
         googleAnalyticsTrackingId: ``,
       },
     },
