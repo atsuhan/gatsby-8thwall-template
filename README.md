@@ -1,6 +1,6 @@
-# atsuhan-gatsby-template
+# gatsby-8thwall-template
 
-My template using Gatsby, react, typescript.
+8thWall template with Gatsby(react) and TypeScript.
 
 ## Recomendation
 
@@ -11,13 +11,26 @@ My template using Gatsby, react, typescript.
 
 ## Get Started
 
-1. install node modules
+1. Change API key to yours
+
+Remove `.sample` from follow file.
+`/src/data/keys.json.sample`
+
+Change API key.
+
+```
+{
+  "EIGHTHWALL": "Your8thWallApiKey"
+}
+```
+
+2. install node modules
 
 ```
 $ yarn
 ```
 
-2. start development server
+3. start development server
 
 ```
 $ yarn start
