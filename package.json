@@ -31,7 +31,7 @@
     "gatsby-remark-images": "^3.2.2",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-source-filesystem": "^2.2.2",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sanitize.css": "^11.0.0",
